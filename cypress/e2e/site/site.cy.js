@@ -1,9 +1,9 @@
 ///<reference types="cypress" />
-const web = 'http://127.0.0.1:8000'
+const web = 'https://hammerhead-app-wwgsk.ondigitalocean.app/tool/MyEntities'
 
 describe('Open the site', () => {
   beforeEach(() => {
-    cy.visit('http://127.0.0.1:8000/')
+    cy.visit('https://hammerhead-app-wwgsk.ondigitalocean.app/tool/MyEntities')
     cy.get('[data-toggle=modal]').click()
     cy.get('#id_email').type('asdsad@gmail.com')
     cy.get('#id_username').type('asdsad@gmail.com')
